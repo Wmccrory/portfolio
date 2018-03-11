@@ -42,6 +42,7 @@
 	.navLink {
 		padding: 0 50px;
 		text-decoration: none;
+		color: #fff;
 	}
 
 	.navLink:visited {
@@ -107,7 +108,6 @@
 			justify-self: center;
 			align-self: center;
 			padding: 1em;
-			background: green;
 		}
 
 	/*bio*/
@@ -165,6 +165,11 @@
 		}
 
 		h2 {
+			font-family: "bitwise";
+			font-size: 5em;
+		}
+
+		h3 {
 			font-family: "bitwise";
 			font-size: 3em;
 		}
