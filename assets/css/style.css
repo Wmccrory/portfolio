@@ -1,0 +1,43 @@
+
+/*navbar*/
+
+	.navbar {
+		background: rgba(0,0,0,0.3);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		display: flex;
+		color: #fff;
+	}
+
+	#header {
+		height: 2em;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.headerContent {
+		display: flex;
+		padding: 0 2%;
+	}
+
+	.headerContent img {
+		max-width: auto;
+		height: 50px;
+		align-self: flex-end;
+	}
+
+
+
+	.navbarLink {
+		margin: 0 25px;
+	}
+
+/*page elements*/
+
+.screen {
+		background: green;
+	height: 100vh;
+	border-bottom: 10px solid black;
+	box-sizing: border-box;
+}
