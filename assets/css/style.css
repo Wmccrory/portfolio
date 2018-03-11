@@ -1,7 +1,8 @@
 
 /*navbar*/
 
-	.navbar {
+	.navbarWeb {
+		z-index: 15;
 		background: rgba(0,0,0,0.3);
 		position: fixed;
 		top: 0;
@@ -21,6 +22,15 @@
 		padding: 0 2%;
 	}
 
+	.navLink {
+		padding: 0 50px;
+		text-decoration: none;
+	}
+
+	.navLink:visited {
+		color: #fff;
+	}
+
 	.headerContent img {
 		max-width: auto;
 		height: 50px;
@@ -35,9 +45,47 @@
 
 /*page elements*/
 
-.screen {
-		background: green;
-	height: 100vh;
-	border-bottom: 10px solid black;
-	box-sizing: border-box;
-}
+	.screen {
+/*			background: green;*/
+		height: 100vh;
+		border-bottom: 10px solid black;
+		box-sizing: border-box;
+	}
+
+	/*intro*/
+
+		.backgroundImage {
+			z-index: -1;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-image: url("../img/splashBackground.png");
+			filter: contrast(200%);
+			background-repeat: no-repeat;
+    		background-size: cover;
+		}
+
+		#splashContent {
+			color: white;
+			z-index: 5;
+			background: rgba(0,0,0,0.5);
+			height: 100%;
+			width: 100%;
+			display: grid;
+			grid-template-rows: auto 10%;
+			grid-template-areas:
+			"splashText"
+			"splashScroll";
+		}
+
+		#splashScroll {
+			grid-area: "splashScroll";
+			justify-self: center;
+			align-self: center;
+		}
+
+		#splashText {
+			grid-area: "splashText";
+			justify-self: center;
+			align-self: center;
+		}
