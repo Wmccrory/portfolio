@@ -1,3 +1,8 @@
+/*global elements*/
+
+	body {
+		animation: colorRotate 60s infinite; 
+	}
 
 /*navbar*/
 
@@ -46,10 +51,9 @@
 /*page elements*/
 
 	.screen {
-/*			background: green;*/
+		position: relative;
+		overflow: hidden;
 		height: 100vh;
-		border-bottom: 10px solid black;
-		box-sizing: border-box;
 	}
 
 	/*intro*/
@@ -60,7 +64,7 @@
 			height: 100%;
 			width: 100%;
 			background-image: url("../img/splashBackground.png");
-			filter: contrast(200%);
+			filter: contrast(170%);
 			background-repeat: no-repeat;
     		background-size: cover;
 		}
@@ -68,7 +72,7 @@
 		#splashContent {
 			color: white;
 			z-index: 5;
-			background: rgba(0,0,0,0.5);
+			background: rgba(255,255,255,0.2);
 			height: 100%;
 			width: 100%;
 			display: grid;
@@ -78,14 +82,102 @@
 			"splashScroll";
 		}
 
-		#splashScroll {
-			grid-area: "splashScroll";
-			justify-self: center;
-			align-self: center;
-		}
-
 		#splashText {
 			grid-area: "splashText";
 			justify-self: center;
 			align-self: center;
+		}
+
+		#splashScroll {
+			grid-area: "splashScroll";
+			justify-self: center;
+			align-self: center;
+			padding: 1em;
+			background: green;
+		}
+
+	/*bio*/
+
+		#bio {
+			display: grid;
+			grid-template-rows: 90% 10%;
+			grid-template-areas:
+			"bioContent"
+			"bioSkills";
+		}
+
+		#bioContent {
+			z-index: 2;
+			grid-area: "bioContent";
+			justify-self: center;
+			align-self: center;
+		}
+
+		#bioSkills {
+			z-index: 2;
+			grid-area: "bioSkills";
+			justify-self: center;
+			align-self: center;
+		}
+
+	/*portfolio*/
+		
+		#portfolio {
+
+		}
+
+	/*background divs (aesthetic)*/
+		.backDiv {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			border: double 100px rgba(0,0,0,0.2);
+			box-sizing: border-box;
+			animation: divColorRotate 60s infinite; 
+		}
+
+		#backDivOne {
+			transform: rotate(10deg);
+		}
+
+		#backDivTwo {
+			transform: rotate(-10deg);
+		}	
+
+	/*background animations*/
+
+		@keyframes colorRotate {
+			0%, 100% {
+				background-color: #25104f;
+			}
+			20% {
+				background-color: #421b90;
+			}
+			40% {
+				background-color: #4b1da7;
+			}
+			60% {
+				background-color: #371776;
+			}
+			80% {
+				background-color: #291158;
+			}
+		}
+
+				@keyframes divColorRotate {
+			0%, 100% {
+				background-color: #6cc3bd;
+			}
+			20% {
+				background-color: #5a819e;
+			}
+			40% {
+				background-color: #7c7aa1;
+			}
+			60% {
+				background-color: #f67e7d;
+			}
+			80% {
+				background-color: #ffc1a8;
+			}
 		}
