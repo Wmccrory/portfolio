@@ -1,7 +1,7 @@
 
 function splashTextInsert () {
-	var splashWords = ["html", "css", "javascript", "jQuery", "handlebars", "reactJS", "angularJS", "the grid", "flexbox", "mongoDB", "mySQL", "git", "node", "php"];
-	var i = Math.floor(Math.random() * splashWords.length);	
+	var splashWords = ["html ", "css ", "javascript ", "jQuery ", "handlebars ", "reactJS ", "angularJS ", "the grid ", "flexbox ", "mongoDB ", "mySQL ", "git ", "node ", "php "];
+	var i = Math.floor(Math.random() * splashWords.length);
 	splitWord = splashWords[i].split("");
 
 	x = 0;
@@ -10,7 +10,6 @@ function splashTextInsert () {
 
 function wordLoader() {
 	if (splitWord.length === 0) {
-		console.log("test");
 		setTimeout(function() {
 			splashTextInsert()
 		}, 1000);
@@ -19,7 +18,7 @@ function wordLoader() {
 			$("#splashLoader").append(splitWord[x]); 
 			x++;
 			wordLoader();
-		}, 500);
+		}, Math.floor(Math.random() * 400) + 100);
 	} else if (x > splitWord.length && x>=0) {
 
 		setTimeout(function() {
@@ -29,7 +28,7 @@ function wordLoader() {
 			--x;
 			wordLoader();
 			console.log(x);
-		}, 500);
+		}, 200);
 	}
 }
 
