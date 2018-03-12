@@ -13,7 +13,7 @@
 
 
 	body {
-		animation: colorRotate 30s infinite; 
+		animation: colorRotate 30s infinite;
 	}
 
 /*navbar*/
@@ -42,11 +42,12 @@
 	.navLink {
 		padding: 0 50px;
 		text-decoration: none;
-		color: #fff;
+		color: #33FF00;
+/*		text-shadow: 2px 2px #fff;*/
 	}
 
 	.navLink:visited {
-		color: #fff;
+		color: #33FF00;
 	}
 
 	.headerContent img {
@@ -87,7 +88,7 @@
 		#splashContent {
 			color: white;
 			z-index: 5;
-			background: rgba(255,255,255,0.2);
+			background: rgba(0,0,0,0.2);
 			height: 100%;
 			width: 100%;
 			display: grid;
@@ -114,7 +115,7 @@
 
 		#bio {
 			display: grid;
-			grid-template-rows: 90% 10%;
+			grid-template-rows: 80% 20%;
 			grid-template-areas:
 			"bioContent"
 			"bioSkills";
@@ -125,6 +126,20 @@
 			grid-area: "bioContent";
 			justify-self: center;
 			align-self: center;
+			display: flex;
+			align-items: center;
+			width: 70%;
+			color: #33FF00;
+		}
+
+		#bioContent img {
+			height: 300px;
+			width: 300px;
+			margin: 0 5em;
+			border: 5px solid #ffe8e8;
+			box-shadow: 0 0 50px #FF0000, 0 0 50px #0000FF;
+			border-radius: 50%;
+			filter: saturate(3) contrast(150%);
 		}
 
 		#bioSkills {
@@ -132,6 +147,14 @@
 			grid-area: "bioSkills";
 			justify-self: center;
 			align-self: center;
+			display: flex;
+			width: 100%;
+			justify-content: space-around;
+		}
+
+		#bioSkills img {
+			max-height: 100px;
+			max-width: 100px;
 		}
 
 	/*portfolio*/
@@ -145,9 +168,9 @@
 			height: 100%;
 			width: 100%;
 			position: absolute;
-			border: double 75px rgba(171, 32, 253, 0.2);
+			border: 5px solid #ffe8e8;
+			box-shadow: 0 0 50px #FF0000, 0 0 50px #0000FF;
 			box-sizing: border-box;
-			animation: divColorRotate 60s infinite; 
 		}
 
 		#backDivOne {
@@ -176,6 +199,11 @@
 
 		h6 {
 			font-family: "bitwise";
+			color: #33FF00;
+		}
+
+		p {
+			font-family: "typeWrong";
 		}
 
 		.navbarWeb a {
@@ -192,30 +220,12 @@
 				background-color: #251f47;
 			}
 			40% {
-				background-color: #ab20fd;
+				background-color: #282828;
 			}
 			60% {
 				background-color: #200589;
 			}
 			80% {
 				background-color: #3a3170;
-			}
-		}
-
-				@keyframes divColorRotate {
-			0%, 100% {
-				background-color: #6cc3bd;
-			}
-			20% {
-				background-color: #5a819e;
-			}
-			40% {
-				background-color: #7c7aa1;
-			}
-			60% {
-				background-color: #f67e7d;
-			}
-			80% {
-				background-color: #ffc1a8;
 			}
 		}
