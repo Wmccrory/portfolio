@@ -105,6 +105,10 @@
 			padding: 1em;
 		}
 
+		#splashLoader {
+			display: inline-block;
+		}
+
 	/*bio*/
 
 		#bio {
@@ -224,7 +228,7 @@
 			}
 		}
 
-/*CRT EFFECT*/
+/*CRT EFFECT credit to: http://aleclownes.com/2017/02/01/crt-display.html*/
 
 @keyframes flicker {
   0% {
