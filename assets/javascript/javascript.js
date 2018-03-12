@@ -1,7 +1,7 @@
 
 function splashTextInsert () {
 	var splashWords = ["html ", "css ", "javascript ", "jQuery ", "handlebars ", "reactJS ", "angularJS ", "the grid ", "flexbox ", "mongoDB ", "mySQL ", "git ", "node ", "php "];
-	var i = Math.floor(Math.random() * splashWords.length);
+	var i = Math.floor(Math.random() * splashWords.length);	
 	splitWord = splashWords[i].split("");
 
 	x = 0;
@@ -27,9 +27,12 @@ function wordLoader() {
 			$("#splashLoader").text(splitWord.join(""));
 			--x;
 			wordLoader();
-			console.log(x);
 		}, 200);
 	}
 }
 
 splashTextInsert()
+
+$(".project").on("click", function() {
+	console.log($(this).attr("id"));
+});
