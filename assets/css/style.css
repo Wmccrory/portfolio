@@ -43,6 +43,7 @@
 		padding: 0 30px;
 		text-decoration: none;
 		color: #33FF00;
+		font-size: 1.5em;
 /*		text-shadow: 2px 2px #fff;*/
 	}
 
@@ -64,6 +65,7 @@
 		height: 100vh;
 		background: url("../img/neonGrid.png");
 		background-size: cover;
+		background-position: center;
 	}
 
 	/*intro*/
@@ -77,6 +79,7 @@
 			filter: contrast(170%);
 			background-repeat: no-repeat;
     		background-size: cover;
+    		background-position: center;
 		}
 
 		#splashContent {
@@ -174,10 +177,6 @@
 			align-self: center;
 			justify-content: space-around;
 			align-items: center;
-/*			overflow: auto;*/
-/*			border: 5px solid #ffe8e8;*/
-/*			box-shadow: 0 0 50px #33FF00, 0 0 50px #33FF00;*/
-/*			background: #000;*/
 			z-index: 5;
 		}
 
@@ -203,6 +202,32 @@
 			text-align: center;
 			user-select: none;
 		}
+
+	/*portfolio modal*/
+			#modal {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100vh;
+				width: 100%;
+				background: rgba(0,0,0,0.5);
+				z-index: 14;
+			}
+
+			#modalContent {
+				position: absolute;
+				top: 15%;
+				left: 50%;
+				transform: translateX(-50%);
+				height: 75%;
+				width: 80%;
+				overflow: auto;
+				border: 5px solid #ffe8e8;
+				border-radius: 15px;
+				box-shadow: 0 0 50px #FF0000, 0 0 50px #0000FF;
+				background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/modalBackground.jpg);
+			}
 
 	/*background divs (aesthetic)*/
 		.backDiv {
@@ -240,6 +265,7 @@
 
 		h6 {
 			font-family: "bitwise";
+			font-size: 1.5em;
 			color: #33FF00;
 		}
 

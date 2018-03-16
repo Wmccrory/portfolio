@@ -1,6 +1,6 @@
 
 function splashTextInsert () {
-	var splashWords = ["html ", "css ", "javascript ", "jQuery ", "handlebars ", "reactJS ", "angularJS ", "the grid ", "flexbox ", "mongoDB ", "mySQL ", "git ", "node ", "php "];
+	var splashWords = ["html5 ", "css3 ", "javascript ", "jQuery ", "handlebars ", "reactJS ", "angularJS ", "the grid ", "flexbox ", "mongoDB ", "mySQL ", "git ", "nodeJS ", "php "];
 	var i = Math.floor(Math.random() * splashWords.length);	
 	splitWord = splashWords[i].split("");
 
