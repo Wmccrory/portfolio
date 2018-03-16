@@ -205,7 +205,7 @@
 
 	/*portfolio modal*/
 			#modal {
-				display: none;
+				/*display: none;*/
 				position: fixed;
 				top: 0;
 				left: 0;
@@ -215,6 +215,11 @@
 				z-index: 14;
 			}
 
+			#modalBackground {
+				height: 100vh;
+				width: 100%;
+			}
+
 			#modalContent {
 				position: absolute;
 				top: 15%;
@@ -222,11 +227,40 @@
 				transform: translateX(-50%);
 				height: 75%;
 				width: 80%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
 				overflow: auto;
 				border: 5px solid #ffe8e8;
 				border-radius: 15px;
 				box-shadow: 0 0 50px #FF0000, 0 0 50px #0000FF;
 				background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/modalBackground.jpg);
+			}
+
+			#modalText {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin: 0 2%;
+			}
+
+			#modalContent p {
+				color: #fff;
+			}
+
+			#modalContent img {
+				max-width: 500px;
+				margin: 0 1em;
+			}
+
+			#modalContent a {
+				text-align: center;
+			}
+
+			#modalClose {
+				position: absolute;
+				top: 1em;
+				right: 1em;
 			}
 
 	/*background divs (aesthetic)*/
@@ -256,6 +290,7 @@
 		h2 {
 			font-family: "bitwise";
 			font-size: 5em;
+			color: #33FF00;
 		}
 
 		h3 {
