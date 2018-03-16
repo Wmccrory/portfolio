@@ -44,7 +44,6 @@
 		text-decoration: none;
 		color: #33FF00;
 		font-size: 1.5em;
-/*		text-shadow: 2px 2px #fff;*/
 	}
 
 	.navLink:visited {
@@ -205,7 +204,7 @@
 
 	/*portfolio modal*/
 			#modal {
-				/*display: none;*/
+				display: none;
 				position: fixed;
 				top: 0;
 				left: 0;
@@ -250,7 +249,7 @@
 
 			#modalContent img {
 				max-width: 500px;
-				margin: 0 1em;
+				margin: 0 1em 0 3em;
 			}
 
 			#modalContent a {
@@ -271,6 +270,7 @@
 			border: 5px solid #ffe8e8;
 			box-shadow: 0 0 50px #FF0000, 0 0 50px #0000FF;
 			box-sizing: border-box;
+			overflow: hidden;
 		}
 
 		#backDivOne {

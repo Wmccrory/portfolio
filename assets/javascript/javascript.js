@@ -7,7 +7,7 @@ var project = [
 	{
 		name : "Digital Sin-Eater",
 		description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit ipsam voluptatem tempora cumque modi, sapiente facilis obcaecati soluta. Nobis quo error quaerat magnam omnis maxime consectetur possimus eius fuga?",
-		gif : "../img/projectExamples/test.png",
+		gif : "assets/img/projectExamples/sineater.gif",
 		link : "https://digitalsineater.herokuapp.com/"
 	},
 	{
@@ -87,8 +87,17 @@ function wordLoader() {
 
 //portfolio project display//
 function projectDisplay (data) {
-	$("#modalContentName").empty()
-	$("#modalContentName").html("<h2>" + data.name)
+	$("#modalContentName").empty();
+	$("#modalContentName").html("<h2>" + data.name);
+
+	$("#modalContentDescription").empty();
+	$("#modalContentDescription").html("<p>" + data.description);
+
+	$("#modalContentGif").removeAttr("src");
+	$("#modalContentGif").attr("src", data.gif)
+
+	$("#modalContentLink").removeAttr("href");
+	$("#modalContentLink").attr("href", data.link);
 }
 
 
