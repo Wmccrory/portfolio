@@ -74,7 +74,7 @@
 			position: absolute;
 			height: 100%;
 			width: 100%;
-			background-image: url("../img/splashBackground2.jpg");
+			background-image: url("../img/splashBackground.jpg");
 			filter: contrast(170%);
 			background-repeat: no-repeat;
     		background-size: cover;
