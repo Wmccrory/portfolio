@@ -13,7 +13,7 @@ var project = [
 	{
 		name : "Execute Order:66",
 		description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit ipsam voluptatem tempora cumque modi, sapiente facilis obcaecati soluta. Nobis quo error quaerat magnam omnis maxime consectetur possimus eius fuga?",
-		gif : "../img/projectExamples/test.png",
+		gif : "assets/img/projectExamples/order66.gif",
 		link : "https://wmccrory.github.io/week4Game/"		
 	},
 	{
@@ -37,7 +37,7 @@ var project = [
 	{
 		name : "tourStalkr",
 		description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit ipsam voluptatem tempora cumque modi, sapiente facilis obcaecati soluta. Nobis quo error quaerat magnam omnis maxime consectetur possimus eius fuga?",
-		gif : "../img/projectExamples/test.png",
+		gif : "assets/img/projectExamples/tourStalkr.gif",
 		link : "https://wmccrory.github.io/tourTrackr/"		
 	},
 	{
@@ -59,7 +59,7 @@ var project = [
 
 //getting word variable to use in page
 function splashTextInsert () {
-	var splashWords = ["html ", "css ", "javascript ", "jQuery ", "handlebars ", "reactJS ", "angularJS ", "the grid ", "flexbox ", "mongoDB ", "mySQL ", "git ", "nodeJS ", "php "];
+	var splashWords = ["html ", "css ", "javascript ", "jQuery ", "handlebars ", "reactJS ", "angularJS ", "the grid ", "flexbox ", "mongoDB ", "mySQL ", "git ", "github ", "nodeJS ", "php "];
 	var i = Math.floor(Math.random() * splashWords.length);	
 	splitWord = splashWords[i].split("");
 
