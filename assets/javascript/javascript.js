@@ -19,19 +19,19 @@ var project = [
 	{
 		name : "Questions of the Void",
 		description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit ipsam voluptatem tempora cumque modi, sapiente facilis obcaecati soluta. Nobis quo error quaerat magnam omnis maxime consectetur possimus eius fuga?",
-		gif : "../img/projectExamples/test.png",
+		gif : "assets/img/projectExamples/triviaGame.gif",
 		link : "https://wmccrory.github.io/triviaGame/"		
 	},
 	{
 		name : "Dredd's Game",
 		description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit ipsam voluptatem tempora cumque modi, sapiente facilis obcaecati soluta. Nobis quo error quaerat magnam omnis maxime consectetur possimus eius fuga?",
-		gif : "../img/projectExamples/test.png",
+		gif : "assets/img/projectExamples/hangmanGame.gif",
 		link : "https://wmccrory.github.io/hangmanGame/"		
 	},
 	{
 		name : "memes overboard!",
 		description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit ipsam voluptatem tempora cumque modi, sapiente facilis obcaecati soluta. Nobis quo error quaerat magnam omnis maxime consectetur possimus eius fuga?",
-		gif : "../img/projectExamples/test.png",
+		gif : "assets/img/projectExamples/memesOverboard.gif",
 		link : "https://wmccrory.github.io/memesOverboard/"		
 	},
 	{
@@ -43,8 +43,14 @@ var project = [
 	{
 		name : "friendFINDer",
 		description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit ipsam voluptatem tempora cumque modi, sapiente facilis obcaecati soluta. Nobis quo error quaerat magnam omnis maxime consectetur possimus eius fuga?",
-		gif : "../img/projectExamples/test.png",
+		gif : "assets/img/projectExamples/friendFinder.gif",
 		link : "https://lawofthejungle.herokuapp.com/"		
+	},
+	{
+		name : "Cache-ual Corner",
+		description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit ipsam voluptatem tempora cumque modi, sapiente facilis obcaecati soluta. Nobis quo error quaerat magnam omnis maxime consectetur possimus eius fuga?",
+		gif : "assets/img/projectExamples/cacheualCorner.gif",
+		link : "https://cacheualcorner.herokuapp.com/"		
 	},
 ]
 
@@ -53,7 +59,7 @@ var project = [
 
 //getting word variable to use in page
 function splashTextInsert () {
-	var splashWords = ["html5 ", "css3 ", "javascript ", "jQuery ", "handlebars ", "reactJS ", "angularJS ", "the grid ", "flexbox ", "mongoDB ", "mySQL ", "git ", "nodeJS ", "php "];
+	var splashWords = ["html ", "css ", "javascript ", "jQuery ", "handlebars ", "reactJS ", "angularJS ", "the grid ", "flexbox ", "mongoDB ", "mySQL ", "git ", "nodeJS ", "php "];
 	var i = Math.floor(Math.random() * splashWords.length);	
 	splitWord = splashWords[i].split("");
 
@@ -133,6 +139,9 @@ $(".project").on("click", function() {
 	}
 	else if (modalDisplay === "friendFinder") {
 		projectDisplay(project[6])
+	}
+	else if (modalDisplay === "cacheualCorner") {
+		projectDisplay(project[7])
 	}
 
 	$("#modal").fadeIn(1000);
