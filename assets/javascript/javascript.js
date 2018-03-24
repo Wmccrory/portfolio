@@ -12,7 +12,7 @@ var project = [
 	},
 	{
 		name : "Execute Order:66",
-		description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit ipsam voluptatem tempora cumque modi, sapiente facilis obcaecati soluta. Nobis quo error quaerat magnam omnis maxime consectetur possimus eius fuga?",
+		description : "The instructions were simple: \"Make a Star Wars fighting game\". Rather than going with the standard \"Luke vs Darth Vader vs Obi Wan\" paradigm, I decided to use what I consider the most macabre and unintentionally funny scene in all of Star Wars; the scene where Anakin goes to the Jedi Temple to slaughter all the younglings. <br><br>The actual gameplay is fairly simple, select your character and then select your opponents, beat all the opponents and win. What makes it entertaining is using the philosophy behind fighting games and having each character have an 'ending scene' and win/loss 'cutscenes'. <br><br>Each character can win depending on the order in which opponents are picked, and each character can lose if they don't pick the correct order.",
 		gif : "assets/img/projectExamples/order66.gif",
 		link : "https://wmccrory.github.io/week4Game/"		
 	},
@@ -48,7 +48,7 @@ var project = [
 	},
 	{
 		name : "Cache-ual Corner",
-		description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis impedit ipsam voluptatem tempora cumque modi, sapiente facilis obcaecati soluta. Nobis quo error quaerat magnam omnis maxime consectetur possimus eius fuga?",
+		description : "Cache-ual Corner is designed to be a very no-frills, persistant chatroom. The trappings of modern chatroom designed were intentionally avoided to give the site the feeling of what chatrooms 'used to be'. <br><br> The styling is designed to be very modular. The structure of the site is coded in a css file, and then a 'skin' css file is overlayed on top of it. <br><br>Users can then go into their personal settings and change everything from their screen name, to avatars and font color, to what 'skin' they would like to be displayed. This allows users to customize their experience, and add personality to their profiles. <br><br>Users and chat messages are stored in a persistant database, so admins can go in and remove any problem users and review what has been taking place even while they have been away.",
 		gif : "assets/img/projectExamples/cacheualCorner.gif",
 		link : "https://cacheualcorner.herokuapp.com/"		
 	},
